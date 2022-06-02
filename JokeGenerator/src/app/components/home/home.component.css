@@ -1,0 +1,13 @@
+h3 {
+    color: #7304eb;
+}
+.home-container {
+    height: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 0;
+    background-color: #fe75fe;
+    border: 3px solid #7304eb;
+}

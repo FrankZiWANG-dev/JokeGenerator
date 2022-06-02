@@ -1,0 +1,16 @@
+<h3 class="mt-5 mb-5">Click the button to read a joke!</h3>
+<div class="joke-container d-flex flex-column justify-content-around p-5 align-items-center">
+    <ng-container *ngIf="!joke">
+        <p class="joke-content">(Get rid of that foul mood!)</p>
+    </ng-container>
+    <ng-container *ngIf="joke">
+        <div class="joke-content">
+            <p *ngIf="joke.joke">{{ joke.joke }}</p>
+            <p *ngIf="joke.setup">{{joke.setup}}</p>
+            <p *ngIf="joke.delivery">{{joke.delivery}}</p>
+        </div>    
+    </ng-container>
+    <button (click)="getJoke()">
+        <fa-icon [icon]="smiley" class="fa-7x" ></fa-icon>
+    </button>
+</div>

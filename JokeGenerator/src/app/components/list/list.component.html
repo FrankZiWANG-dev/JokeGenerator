@@ -1,0 +1,17 @@
+<h3 class="mt-5 mb-5">Get your mind off things with these 10 jokes! </h3>
+<div class="jokes-container d-flex flex-column justify-content-around p-5 align-items-center">
+    <ng-container *ngIf="!jokes">
+        <p class="jokes-content">Jokes loading</p>
+    </ng-container>
+    <ng-container *ngIf="jokes">
+        <div class="jokes-content">
+            <table>
+                <tr *ngFor="let joke of jokes.jokes; index as i">
+                    <td> {{i+1}}. </td>
+                    <td *ngIf="joke.joke"> {{ joke.joke }} </td>
+                    <td *ngIf="joke.setup"> {{ joke.setup }} {{joke.delivery}} </td>
+                </tr>
+            </table>
+        </div>    
+    </ng-container>
+</div>

@@ -1,0 +1,17 @@
+h3{
+    color: #7304eb;
+}
+.jokes-container{
+    background-color: #fe75fe;
+    margin-bottom: 0;
+    border: 3px solid blue;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jokes-content {
+    max-width: 80%;
+}
+td {
+    padding: 15px;
+}
